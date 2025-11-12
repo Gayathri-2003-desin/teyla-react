@@ -8,10 +8,6 @@ body {
     flex-direction: column;
     gap: 80px;
 }
-
-
-
-
 .heading {
     margin: 0px;
     display: flex;
