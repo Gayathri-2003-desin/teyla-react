@@ -119,3 +119,18 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
+
+@media (max-width: 600px) {
+.memories {
+    align-self: center;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    color: white;
+}
+}

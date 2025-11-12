@@ -224,3 +224,17 @@ margin: 0px;
 }
 
 
+@media (max-width: 600px) {
+.teyla-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.north-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+}

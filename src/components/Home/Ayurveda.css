@@ -89,3 +89,11 @@ margin: 0px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
+
+@media (max-width: 600px) {
+.north-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+}
