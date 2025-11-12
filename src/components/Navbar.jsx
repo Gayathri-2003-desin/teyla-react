@@ -4,7 +4,7 @@ import './Navbar.css';
 function Navbar() {
   return (
     <>
-<div className="head-section flex justify-between items-center bg-white pr-5 mx-[60px]"> 
+<div className="head-section flex justify-between items-center  pr-5 mx-[60px] text-white"> 
        <img className="head-logo w-[130px] h-[70px]" src="images/s-logo.png" alt="Logo" />
     
 

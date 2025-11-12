@@ -18,14 +18,17 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1; 
-  opacity: 0.7; 
-  border-radius: 25px;
+  opacity: 0.9; 
+
 }
 
 .memories {
+  align-self: center;
   position: relative;
   z-index: 2;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
   justify-content: space-between;
   align-items: center;
   padding: 60px;
@@ -35,41 +38,37 @@ body {
 .left {
     display: flex;
     flex-direction: column;
-    
+   
 }
 
 .slider-container {
   position: relative;
-  width: 100%;
-   /* Enough to show only 2 images side by side */
-  overflow: hidden; /* Hide extra images */
+  width: 640px; /* 2 * 300px + 20px gap + small padding */
+  overflow: hidden;
+
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-content: center;
 }
 
 .image-row {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
 }
 
 .image-row::-webkit-scrollbar {
-  display: none; /* Hide scrollbar in Chrome */
+  display: none;
 }
 
 .slide-image {
-    display: flex;
-    gap: 20px;
-  width: 300px; /* image width */
+  width: 300px;
   height: 500px;
-  border-radius: 10px;
+  border-radius: 20px;
   object-fit: cover;
   flex-shrink: 0;
+  scroll-snap-align: start;
   transition: transform 0.3s ease;
 }
 
@@ -77,35 +76,40 @@ body {
   transform: scale(1.05);
 }
 
+
 .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.3);
-  border: none;
+  border: 3px solid #014D4E;
   color: white;
   font-size: 2rem;
   cursor: pointer;
   z-index: 10;
   transition: background 0.3s;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
 }
 
 .arrow:hover {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.arrow.left {
-  position: absolute;
-  left: 0;
-}
-
-.arrow.right {
-  position: absolute;
-  right: 0;
-}
-
 
 .life {
+   margin: 0px;
     text-align: center;
     font-size: 48px;
-    color: #014D4E;
+    color: white;
     font-family: 'Outfit', sans-serif;
 }
 

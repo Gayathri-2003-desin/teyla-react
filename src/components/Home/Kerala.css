@@ -1,0 +1,78 @@
+body {
+   font-family: 'Outfit', sans-serif; 
+  
+}
+.kerala-head {
+  text-align: center;
+        font-size: 42px;
+        margin-top: 0px;
+}
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.second-head {
+  text-align: center;
+    font-size: 24px;
+}
+
+.kerala-content {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("images/kalari.jpg"); 
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  text-align: center;
+  padding: 100px 40px;
+  border-radius: 20px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.kerala-content h1 {
+  font-size: 48px;
+margin: 0px;
+  letter-spacing: 1px;
+}
+
+.kerala-content p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.more {
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border: 2px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Outfit', sans-serif;
+}
+
+.more:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+.kerala-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    gap: 30px;
+}
+

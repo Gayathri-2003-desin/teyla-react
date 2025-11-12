@@ -28,7 +28,7 @@ function VideoBackground() {
     kasaragod: {
       name: "Kasaragod",
       content: `Kasargod, the land of majestic forts and tranquil backwaters, mesmerizes with its serene hills and golden shores.`,
-      video: "/videos/kasaragod.mp4", // optional if available
+      video: "/videos/dam.mp4", // optional if available
     },
   };
 

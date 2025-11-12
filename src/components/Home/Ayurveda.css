@@ -1,0 +1,91 @@
+body {
+   font-family: 'Outfit', sans-serif; 
+   background-color: white;
+}
+
+.head h1 {
+  text-align: center;
+    font-size: 42px;
+    margin-top: 0px;
+}
+.head h4 {
+    font-size: 24px;
+}
+
+.wrap {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.north-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+
+.image-card img {
+    border-radius: 20px;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay text styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-bottom: 20px;
+  transition: opacity 0.4s ease;
+}
+
+.image-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+    text-align: left;
+  font-size: 1.5rem;
+margin: 0px;
+}
+
+.overlay p {
+  font-size: 1rem;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.north-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}

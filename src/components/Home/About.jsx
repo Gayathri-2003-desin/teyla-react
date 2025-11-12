@@ -9,7 +9,7 @@ function About() {
   return (
     <>
     
-<div className="main-wrap">
+<div className="about-wrap">
       <div className="wrap-two">
         <div className="heading">
         <div className="teys">
@@ -31,7 +31,7 @@ function About() {
   </div>
 
   <div className="business">
-    <h2 className="head-grid">About Our Teyla</h2>
+    {/* <h2 className="head-grid">About Our Teyla</h2> */}
    
     <div className="energy-trading">
       <p className="trading-para">
@@ -57,7 +57,9 @@ function About() {
 
       <div className="n-malabar">
         <h1 className="north">North Malabar</h1>
-        <p className="north-para">where vibrant traditions meet serene landscapes, creating a perfect harmony of culture and nature.</p>
+        <h4 className="north-para">where vibrant traditions meet serene landscapes, creating a perfect harmony of culture and nature.</h4>
+  
+  
    <div className="north-images">
   <div className="image-card">
     <img src="images/bekal.jpg" alt="Bekal Fort" />
@@ -79,7 +81,7 @@ function About() {
     <img src="images/beach.jpg" alt="Malabar Beach" />
     <div className="overlay">
       <h3>Malabar Beach</h3>
-      <p>Golden sands and soothing waves — nature’s calm embrace.</p>
+      <p>Golden sands and soothing waves nature’s calm embrace.</p>
     </div>
   </div>
 </div>
