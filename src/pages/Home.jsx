@@ -1,6 +1,6 @@
 
 import React from "react";
-import './home.css';
+import './Home.css';
 import Navbar from "../components/Navbar.jsx";
 import VideoBackground from "../components/Home/VideoBackground.jsx";
 import Where from "./Where.jsx";
