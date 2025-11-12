@@ -121,7 +121,7 @@ body {
     flex-direction: column;
     gap: 45px;
 }
-button {
+.discover {
     text-align: center;
     font-weight: 500;
     border-radius: 117px;
@@ -137,7 +137,7 @@ button {
     margin: 0px;
     text-align: center;
     font-size: 48px;
-    color: #014D4E;
+    color: black;
     font-family: 'Outfit', sans-serif;
 }
 

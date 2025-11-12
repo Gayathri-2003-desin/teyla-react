@@ -81,12 +81,12 @@ function Footer() {
             <div className="flex items-center gap-3">
               <Instagram className="w-6 h-6 text-white" />
               <a
-                href="https://www.instagram.com/falconyxtrading/"
+                href="https://www.instagram.com/teyla_tourseller/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-300 text-base"
               >
-                #teyla_tourseller <br /> #teyla_trips
+                @teyla_tourseller <br /> @teyla_trips
               </a>
             </div>
           </div>
