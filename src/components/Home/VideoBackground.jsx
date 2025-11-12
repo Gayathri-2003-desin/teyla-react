@@ -6,29 +6,29 @@ function VideoBackground() {
   const [district, setDistrict] = useState({
     name: "Wayanad",
     content: `Wayanad, nestled in the lush Western Ghats, is a land of misty hills, emerald forests, and serene waterfalls that captivate every traveler’s heart.`,
-    video: "/videos/wynd-bg.mp4",
+    video: "https://taai-bluecast.s3.ap-south-1.amazonaws.com/teyla/wynd-bg.mp4",
   });
 
   const districts = {
     wayanad: {
       name: "Wayanad",
       content: `Wayanad, nestled in the lush Western Ghats, is a land of misty hills, emerald forests, and serene waterfalls that captivate every traveler’s heart.`,
-      video: "/videos/wynd-bg.mp4",
+      video: "https://taai-bluecast.s3.ap-south-1.amazonaws.com/teyla/wynd-bg.mp4",
     },
     kannur: {
       name: "Kannur",
       content: `Kannur, the land of looms and lore, captivates with its golden beaches, misty hills, and vibrant Theyyam traditions.`,
-      video: "/videos/kannur.mp4", // You can add this later
+      video: "https://taai-bluecast.s3.ap-south-1.amazonaws.com/teyla/kannur.mp4", // You can add this later
     },
     kozhikode: {
       name: "Kozhikode",
       content: `Kozhikode, where golden sunsets kiss serene beaches, echoes with the charm of history and spice-laden breezes.`,
-      video: "/videos/kozhikode.mp4",
+      video: "https://taai-bluecast.s3.ap-south-1.amazonaws.com/teyla/kozhikode.mp4",
     },
     kasaragod: {
       name: "Kasaragod",
       content: `Kasargod, the land of majestic forts and tranquil backwaters, mesmerizes with its serene hills and golden shores.`,
-      video: "/videos/dam.mp4", // optional if available
+      video: "https://taai-bluecast.s3.ap-south-1.amazonaws.com/teyla/dam.mp4", // optional if available
     },
   };
 
@@ -48,7 +48,7 @@ function VideoBackground() {
     playsInline
     className="background-video"
   >
-    <source src={district.video} type="video/mp4" />
+    <source src={district.video}  />
   </video>
 
   <div className="video-container">

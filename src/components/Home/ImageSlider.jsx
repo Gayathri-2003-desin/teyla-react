@@ -33,7 +33,7 @@ function ImageSlider() {
         <div className="image-slider-section">
       {/* 🎥 Background video only for this component */}
       <video autoPlay loop muted playsInline className="slider-bg-video">
-        <source src="videos/mountain.mp4" type="video/mp4" />
+        <source src="https://taai-bluecast.s3.ap-south-1.amazonaws.com/teyla/mountain.mp4"  />
       </video>
 
       <div className="memories">
