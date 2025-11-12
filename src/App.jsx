@@ -4,7 +4,7 @@ import VideoBackground from "./components/Home/VideoBackground.jsx";
 // import About from "./components/Home/About.jsx";              
 import Where from "./pages/Where.jsx";                        
 import Experience from "./pages/Experience.jsx";  
-import MainRouter from "./Router/mainRouter";
+import MainRouter from "../src/router/mainRouter.jsx"
 import Home from "./pages/Home.jsx"
 import { BrowserRouter } from "react-router-dom";
 import './index.css'  
