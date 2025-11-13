@@ -1,5 +1,5 @@
 body {
-   font-family: 'Outfit', sans-serif; 
+   font-family: 'Poppins', sans-serif;
    
 }
 .all-wrap {
@@ -59,7 +59,7 @@ body {
   opacity: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent); /* subtle fade from bottom */
   transition: opacity 0.4s ease;
-  font-family: 'Outfit', sans-serif;
+ font-family: 'Poppins', sans-serif;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }

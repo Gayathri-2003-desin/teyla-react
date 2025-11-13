@@ -1,5 +1,6 @@
 body {
-   font-family: 'Outfit', sans-serif; 
+  font-family: 'Poppins', sans-serif;
+
 }
 
 
@@ -10,7 +11,7 @@ body {
   overflow: hidden;
 }
 
-.slider-bg-video {
+/* .slider-bg-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,13 +21,28 @@ body {
   z-index: -1; 
   opacity: 0.9; 
 
+} */
+
+.slider-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/tea-plants.jpg'); /* 🖼️ adjust path */
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* same stacking as video */
+  filter: brightness(0.85); /* optional: darken for readability */
 }
+
 
 .memories {
   align-self: center;
   position: relative;
   z-index: 2;
   display: grid;
+  margin-top: 50px;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   justify-content: space-between;
@@ -82,7 +98,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.3);
-  border: 3px solid #014D4E;
+  border: 3px solid white;
   color: white;
   font-size: 2rem;
   cursor: pointer;
@@ -110,13 +126,13 @@ body {
     text-align: center;
     font-size: 48px;
     color: white;
-    font-family: 'Outfit', sans-serif;
+    
 }
 
 .life-para {
     text-align: center;
     font-size: 20px;
-    font-family: 'Outfit', sans-serif;
+   
 }
 
 

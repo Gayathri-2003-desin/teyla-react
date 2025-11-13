@@ -1,3 +1,9 @@
+body {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
 /* Fullscreen Video Background */
 .background-video {
   position: absolute; /* make it cover full screen */
@@ -31,8 +37,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.4); /* optional translucent background */
+  z-index: 9;
+  background: rgba(236, 230, 230, 0.4); /* optional translucent background */
   backdrop-filter: blur(4px); /* makes it look modern */
 }
 

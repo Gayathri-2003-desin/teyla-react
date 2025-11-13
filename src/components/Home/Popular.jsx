@@ -6,9 +6,10 @@ function Popular() {
   return (
     <div>
       <div className='all-wrap'>
+        <div className='pop-content'>
         <h1 className='pop-head' >Popular Destinations</h1>
-        <h4 className='pop-para'>Check out these enthralling tourism spots that cast a magical spell</h4>
-      
+        <h4 className="text-center text-xl">Check out these enthralling tourism spots that cast a magical spell</h4>
+      </div>
 
 
 <div class="image-grid">

@@ -43,7 +43,7 @@ function VideoBackground() {
   return (
     <>
       {/* Navbar */}
-      <div className="fixed top-0 left-0 w-full z-10 bg-black/40 backdrop-blur-md">
+      <div className="fixed top-0 left-0 w-full z-10 bg-black/10 backdrop-blur-md">
         <Navbar />
       </div>
 

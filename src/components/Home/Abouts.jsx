@@ -22,7 +22,7 @@ function About() {
     
 <div className="teyla-flex">
   <div className="beach">
-    <img className="sea" src="images/fire.jpg" alt="drinks" />
+    <img className="sea" src="images/coffee.jpg" alt="drinks" />
     <img className="tea" src="images/beach.jpg" alt="beach" />
     <img className="hospital" src="images/hospital.jpeg" alt="hospital" />
   </div>
@@ -53,9 +53,10 @@ function About() {
 
 
       <div className="n-malabar">
+        <div className="n-content">
         <h1 className="north">North Malabar</h1>
-        <h4 className="north-para">where vibrant traditions meet serene landscapes, creating a perfect harmony of culture and nature.</h4>
-  
+        <h4 className="text-center text-xl">where vibrant traditions meet serene landscapes, creating a perfect harmony of culture and nature.</h4>
+       </div>
   
    <div className="north-images">
   <div className="image-card">

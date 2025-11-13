@@ -7,10 +7,10 @@ function Navbar() {
 
   return (
     <header className="text-white bg-transparent">
-      <div className="flex justify-between items-center px-6 md:px-14 py-4">
+      <div className="flex justify-between items-center pr-[80px] pl-0 py-2">
         {/* Logo */}
         <img
-          className="w-[120px] h-[60px] object-contain"
+          className="w-[210px] h-[80px] object-contain"
           src="/images/s-logo.png"
           alt="Logo"
         />
@@ -22,17 +22,18 @@ function Navbar() {
         </nav>
 
         {/* Contact Button (Visible on all screens) */}
-        <button
-          className="bg-[#014D4E] text-white font-medium rounded-full px-5 py-2.5 
-                     text-[16px] border-0 cursor-pointer transition duration-300 
-                     hover:bg-[#016B6C]"
-        >
-          Contact Us
-        </button>
+      <button
+  className="border border-white p-1 bg-[#014D4E] text-white font-medium rounded-full px-5 py-2.5 
+             text-[16px] cursor-pointer transition duration-300 
+             hover:bg-[#016B6C]"
+>
+  Contact Us
+</button>
+
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden focus:outline-none"
+         className=" md:hidden focus:outline-white  rounded"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
