@@ -7,7 +7,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000; /* Keeps it above videos and other content */
-  background-color: rgba(0, 0, 0, 0.5); /* optional transparent bg */
+  /* background-color: rgba(0, 0, 0, 0.5);  */
   backdrop-filter: blur(5px); /* nice glass effect */
 }
 
