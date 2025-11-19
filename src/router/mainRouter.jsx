@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home.jsx";
-import Where from "../pages/Where.jsx";
-import Experience from "../pages/Experience.jsx";
+import Where from "../pages/Whereto.jsx";
+import Experience from "../pages/Experiences.jsx";
 
 function MainRouter() {
   return (

@@ -2,8 +2,10 @@ import React from "react";
 import Navbar from "./components/Navbar.jsx";          
 import VideoBackground from "./components/Home/VideoBackground.jsx";
 // import About from "./components/Home/About.jsx";              
-import Where from "./pages/Where.jsx";                        
-import Experience from "./pages/Experience.jsx";  
+// import Where from "./pages/Whereto.jsx";                        
+// import Experience from "./pages/Experiences.jsx";  
+import Experiences from "./pages/Experiences.jsx";
+import Where from "./pages/Whereto.jsx";
 import MainRouter from "../src/router/mainRouter.jsx"
 import Home from "./pages/Home.jsx"
 import { BrowserRouter } from "react-router-dom";

@@ -6,7 +6,7 @@ body {
 .about-wrap {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
 }
 .heading {
     margin: 0px;

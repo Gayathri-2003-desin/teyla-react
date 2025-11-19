@@ -1,0 +1,12 @@
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* .attract, .art, .picnic {
+  border: none;
+} */
+.active-tab {
+  border-bottom: 4px solid #014D4E !important;
+}

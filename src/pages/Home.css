@@ -1,8 +1,9 @@
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: lightgrey;
 }
 .home {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 50px;
 }

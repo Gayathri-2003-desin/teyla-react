@@ -76,25 +76,25 @@ function VideoBackground() {
           <div className="flex flex-wrap justify-center gap-6 sm:gap-4 mb-4">
             <button
               onClick={() => handleDistrictClick("wayanad")}
-              className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-lg bg-white/20 text-white transition duration-300 hover:bg-white/50 text-sm sm:text-base"
+              className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-lg bg-gray-300 backdrop-blur-md bg-white/40 text-white transition duration-300 hover:bg-white/40 text-sm sm:text-base"
             >
               Wayanad
             </button>
             <button
               onClick={() => handleDistrictClick("kannur")}
-              className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-lg bg-white/20 text-white transition duration-300 hover:bg-white/50 text-sm sm:text-base"
+              className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-lg bg-gray-300 backdrop-blur-md bg-white/40 text-white transition duration-300 hover:bg-white/40 text-sm sm:text-base"
             >
               Kannur
             </button>
             <button
               onClick={() => handleDistrictClick("kozhikode")}
-              className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-lg bg-white/20 text-white transition duration-300 hover:bg-white/50 text-sm sm:text-base"
+              className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-lg bg-gray-300 backdrop-blur-md bg-white/40 text-white transition duration-300 hover:bg-white/40 text-sm sm:text-base"
             >
               Kozhikode
             </button>
             <button
               onClick={() => handleDistrictClick("kasaragod")}
-              className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-lg bg-white/20 text-white transition duration-300 hover:bg-white/50 text-sm sm:text-base"
+              className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-lg bg-gray-300 backdrop-blur-md bg-white/40 text-white transition duration-300 hover:bg-white/40 text-sm sm:text-base"
             >
               Kasaragod
             </button>
