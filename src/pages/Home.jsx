@@ -15,8 +15,8 @@ import Footer from "../components/Footer.jsx";
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // animation duration
-      once: false,     // animation repeats when scrolling
+      duration: 1000, 
+      once: false,     
       easing: "ease-out",
     });
   }, []);
@@ -31,7 +31,7 @@ function App() {
 
 
 
-<div className="bg-[#B8B8B8] space-y-20 py-20">
+<div className="flex flex-col gap-[50px] bg-gradient-to-b from-white via-[#959292] to-white ">
 
 
 

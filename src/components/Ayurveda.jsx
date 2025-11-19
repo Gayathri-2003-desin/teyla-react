@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Ayurveda() {
   return (
     <div className="flex flex-col gap-15 w-full font-poppins ">
@@ -48,9 +48,15 @@ function Ayurveda() {
             Ayurveda Courses by Teyla Tourism 
           </h1>
           <p className="text-[18px] text-justify leading-relaxed text-gray-700">Teyla Tourism provides online and offline Ayurveda courses in Partnership with PVA Ayurveda Hospital. Ayurveda is rooted in natural healing principles, Ayurveda teaches how to maintain balance between the body, mind, and spirit through lifestyle, food, herbs, and personalized therapies.</p>
-<button className="bg-[#014D4E] text-center text-white w-24 py-3 rounded-full text-lg hover:bg-[#016060] transition">
-  Register
-</button>
+
+
+<Link to="/register">
+  <button className="bg-[#014D4E] text-center text-white w-34 py-3 rounded-full text-lg hover:bg-[#016060] transition">
+    Register
+  </button>
+</Link>
+
+
         </div>
 
         <div>
@@ -76,9 +82,11 @@ function Ayurveda() {
         </p>
 
         <div className="">
-          <button className="bg-[#014D4E] text-white px-6 py-3 rounded-full text-lg hover:bg-[#016060] transition">
-            Book consultation
-          </button>
+    <Link to="/consult">
+  <button className="bg-[#014D4E] text-center text-white w-54 py-3 rounded-full text-lg hover:bg-[#016060] transition">
+    Book Consultation
+  </button>
+</Link>
         </div>
       </div>
     </div>

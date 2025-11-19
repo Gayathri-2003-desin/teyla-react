@@ -4,6 +4,8 @@ import VideoBackground from "./components/Home/VideoBackground.jsx";
 // import About from "./components/Home/About.jsx";              
 // import Where from "./pages/Whereto.jsx";                        
 // import Experience from "./pages/Experiences.jsx";  
+import RegisterForm from "./pages/RegisterForm.jsx";
+import ConsultForm from "./pages/ConsultForm.jsx";
 import Experiences from "./pages/Experiences.jsx";
 import Where from "./pages/Whereto.jsx";
 import MainRouter from "../src/router/mainRouter.jsx"
