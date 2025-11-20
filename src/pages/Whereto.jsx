@@ -6,14 +6,12 @@ import Footer from "../components/Footer.jsx";
 function Where() {
   const [active, setActive] = useState("attractions");
 
-
   const tabs = [
     { id: "attractions", label: "Attractions" },
     { id: "art", label: "Art & Culture" },
     { id: "picnic", label: "Picnic Spots" }
   ];
 
- 
   const imageData = {
     attractions: [
       { img: "/images/waterfalls.jpg", text: "Waterfalls" },
@@ -55,52 +53,61 @@ function Where() {
     <>
       <div className="main-wrap">
 
-      
         <div className="header">
           <Navbar />
         </div>
 
-        <div className="image-wrap"></div>
-      
-        <div className="flex justify-center items-center gap-10 ">
-
+        {/* Desktop Tabs */}
+        <div className="hidden sm:flex justify-center items-center gap-10 mt-6">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActive(tab.id)}
               className={`pb-1 text-lg font-medium ${
                 active === tab.id
-                  ? "border-b-4 border-[#014D4E]" : "border-b-4 border-transparent"
+                  ? "border-b-4 border-[#014D4E]"
+                  : "border-b-4 border-transparent"
               }`}
             >
               {tab.label}
             </button>
           ))}
-
         </div>
 
-      
-        <div className="attract-img  zIndex: -1">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ml-20 mr-20 zIndex: -1">
+        {/* Mobile Dropdown */}
+        <div className="sm:hidden flex justify-center mt-6 px-4">
+          <select
+            value={active}
+            onChange={(e) => setActive(e.target.value)}
+            className="w-full p-3 rounded-lg border-none text-lg text-center text-black-700 bg-white shadow-sm"
+          >
+            {tabs.map((tab) => (
+              <option key={tab.id} value={tab.id}>
+                {tab.label}
+              </option>
+            ))}
+          </select>
+        </div>
 
+        {/* Image Grid */}
+        <div className="mt-8 px-4 sm:px-10 lg:px-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {currentImages.map((item, index) => (
               <div key={index} className="relative">
                 <img
-             src={item.img}
-           alt={item.text}
-   className="w-full h-64 object-cover rounded-xl"
+                  src={item.img}
+                  alt={item.text}
+                  className="w-full h-64 object-cover rounded-xl"
                 />
                 <p className="absolute bottom-3 right-3 text-white bg-black/40 px-3 py-1 rounded-lg text-sm font-medium">
                   {item.text}
                 </p>
               </div>
             ))}
-
           </div>
         </div>
 
-        {/* FOOTER */}
-        <div className="footer">
+        <div className="footer mt-10">
           <Footer />
         </div>
 

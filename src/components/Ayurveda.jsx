@@ -1,94 +1,81 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 function Ayurveda() {
   return (
-    <div className="flex flex-col gap-15 w-full font-poppins ">
+    <div className="flex flex-col w-full font-poppins">
 
-    
-      {/* <div className="text-center flex flex-col gap-4 px-16  mx-2 ">
-        <h1 className="text-[#014D4E] font-semibold text-3xl sm:text-4xl md:text-5xl uppercase">
-          Introduction to Ayurveda in Malabar
-        </h1>
+      {/* Heading */}
+      <h1 className="text-center text-[#014D4E] font-semibold text-2xl sm:text-3xl px-4 mt-6">
+        Discover Wellness & Culture in Kerala with Teyla
+      </h1>
 
-        <p className="text-[18px] text-justify leading-relaxed text-gray-700">
-          Ayurveda in Malabar has a rich heritage deeply rooted in the region’s natural abundance and traditional healing wisdom. The lush forests, medicinal plants, and favorable climate of North Kerala have long supported the practice of Ayurveda as a way of life rather than just a system of medicine. Renowned for its authentic treatments, Malabar’s Ayurvedic centers and practitioners follow time-tested therapies such as Panchakarma, herbal massages, and rejuvenation treatments.
+      {/* Section 1 */}
+      <div className="grid md:grid-cols-2 gap-6 px-4 sm:px-6 md:px-10 lg:px-20 py-6 items-center">
+        
+        <img
+          src="images/ayur.jpg"
+          className="w-full h-[260px] sm:h-[300px] md:h-[340px] rounded-xl object-cover"
+          alt="Ayurveda"
+        />
+
+        <p className="text-[16px] sm:text-[18px] text-justify leading-relaxed text-gray-700">
+          <b>In collaboration with PVA Ayurvedic Multi Speciality Hospital,</b> 
+          we offer a unique journey combining Kerala’s ancient healing wisdom with immersive experiences in North Malabar. 
+          PVA, located in the serene greenery of Kannur, is the only center with a prestigious “Green Leaf” accreditation from the Government of Kerala.
+          Your wellness programme includes personalised consultations, Panchakarma, herbal therapies, yoga sessions, and lifestyle guidance.
         </p>
-      </div> */}
+      </div>
 
-                  <h1 className="text-center text-[#014D4E] font-semibold text-2xl sm:text-3xl">
-            Discover Wellness & Culture in Kerala with Teyla
+      {/* Ayurveda Courses Section */}
+      <div className="grid md:grid-cols-2 gap-6 px-4 sm:px-6 md:px-10 lg:px-20 py-6 items-center">
+
+        <div className="flex flex-col gap-4 items-center">
+          <h1 className="text-[#014D4E] font-semibold text-2xl sm:text-3xl text-center md:text-left">
+            Ayurveda Courses by Teyla Tourism
           </h1>
 
-      <div className="grid md:grid-cols-2 gap-10  px-6 md:px-16 lg:px-20 items-center">
-        <div>
-       
-          <img
-            src="images/ayur.jpg"
-            className="w-full h-[320px] rounded-xl object-fit"
-            alt="Hospital"
-          />
-        </div>
-
-        <div className="flex flex-col gap-4">
-
-
-          <p className="text-[18px] text-justify leading-relaxed text-gray-700">
-            <b>In collaboration with PVA Ayurvedic Multi Speciality Hospital,</b> we bring you a unique journey that integrates the time-honoured healing wisdom of Kerala’s Ayurveda with immersive travel experiences in North Malabar. Located in the lush, tranquil setting of Kannur, PVA is the only centre in the region to hold the “Green Leaf” accreditation from the Government of Kerala a mark of quality and safety in Ayurvedic services.
-            A tailored wellness programme at PVA: personalised consultations, Panchakarma and other classical therapies, herbal treatments, yoga and holistic lifestyle guidance.Ayurveda opens the door to understanding the human body from a holistic perspective.
+          <p className="text-[16px] sm:text-[18px] text-justify leading-relaxed text-gray-700">
+            Teyla Tourism provides online and offline Ayurveda courses 
+            in partnership with PVA Ayurveda Hospital. 
+            Ayurveda teaches balance between mind, body, and spirit through natural methods, diet, herbs, and personalized therapies.
           </p>
+
+          <Link to="/register" className="flex justify-center md:justify-start">
+            <button className="bg-[#014D4E] text-white px-8 py-3 rounded-full text-lg hover:bg-[#016060] transition">
+              Register
+            </button>
+          </Link>
         </div>
+
+        <img
+          src="images/course.jpg"
+          className="w-full h-[240px] sm:h-[270px] rounded-xl object-cover"
+          alt="Course"
+        />
       </div>
 
-    
+      {/* Consultation Section */}
+      <div className="flex flex-col gap-4 text-center px-4 sm:px-6 md:px-10 lg:px-24 py-8">
 
-
-      <div className="text-center grid md:grid-cols-2 gap-10 px-6 md:px-16 lg:px-20 items-center ">
-        <div className="flex flex-col justify-center items-center gap-5 ">
-          <h1 className="text-[#014D4E] font-semibold text-2xl sm:text-3xl">
-            Ayurveda Courses by Teyla Tourism 
-          </h1>
-          <p className="text-[18px] text-justify leading-relaxed text-gray-700">Teyla Tourism provides online and offline Ayurveda courses in Partnership with PVA Ayurveda Hospital. Ayurveda is rooted in natural healing principles, Ayurveda teaches how to maintain balance between the body, mind, and spirit through lifestyle, food, herbs, and personalized therapies.</p>
-
-
-<Link to="/register">
-  <button className="bg-[#014D4E] text-center text-white w-34 py-3 rounded-full text-lg hover:bg-[#016060] transition">
-    Register
-  </button>
-</Link>
-
-
-        </div>
-
-        <div>
-
-          <img
-            src="images/course.jpg"
-            className="w-full h-[270px] rounded-xl object-cover "
-            alt="Course"
-          />
-        </div>
-      </div>
-
-      
-      <div className="flex flex-col gap-0 text-center  px-6 md:px-16 lg:px-24">
-        <h1 className="text-[#014D4E] font-semibold text-3xl sm:text-4xl mb-4">
-          Let's begin Ayurvedic journey
+        <h1 className="text-[#014D4E] font-semibold text-2xl sm:text-3xl">
+          Let's Begin Your Ayurvedic Journey
         </h1>
 
-        <p className="text-[18px] text-justify leading-relaxed text-gray-700">
-          Whether you are seeking preventive care, stress management, rejuvenation therapy, or relief from specific ailments, our Ayurvedic experts ensure a compassionate, detailed, and holistic approach to healing.
-          Book your consultation today to experience the timeless wisdom of Ayurveda — and take the first step toward a balanced, healthy, and harmonious life.
-          During your consultation, our doctors will assess your body constitution (Prakriti), discuss your health concerns, and recommend customized treatment plans, herbal medications, dietary guidance, and lifestyle routines based on authentic Ayurvedic principles.
+        <p className="text-[16px] sm:text-[18px] text-justify leading-relaxed text-gray-700">
+          Whether you're seeking stress relief, rejuvenation, or treatment for specific concerns, 
+          our Ayurvedic experts provide detailed and holistic guidance.
+          During your consultation, doctors analyse your body constitution (Prakriti), 
+          understand your health concerns, and recommend personalized treatments, diet, lifestyle routines, and herbal medications.
         </p>
 
-        <div className="">
-    <Link to="/consult">
-  <button className="bg-[#014D4E] text-center text-white w-54 py-3 rounded-full text-lg hover:bg-[#016060] transition">
-    Book Consultation
-  </button>
-</Link>
-        </div>
+        <Link to="/consult" className="flex justify-center mt-2">
+          <button className="bg-[#014D4E] text-white px-10 py-3 rounded-full text-lg hover:bg-[#016060] transition">
+            Book Consultation
+          </button>
+        </Link>
       </div>
+
     </div>
   );
 }
